@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_application_1/screens/home_screen.dart';
 import 'package:flutter_application_1/sign_up.dart';
 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-      options: FirebaseOptions(
-          apiKey: 'AIzaSyC7DrVE6Xw76BcSs49t3f3zA3jN2Q136Ug',
-          appId: '1:20460630059:web:4958c915084ae915933a6e',
-          messagingSenderId: '',
-          projectId:
-              'finalterm-fb4d0')); 
+  // await Firebase.initializeApp(
+  //     options: FirebaseOptions(
+  //         apiKey: 'AIzaSyC7DrVE6Xw76BcSs49t3f3zA3jN2Q136Ug',
+  //         appId: '1:20460630059:web:4958c915084ae915933a6e',
+  //         messagingSenderId: '',
+  //         projectId:
+  //             'finalterm-fb4d0')); 
 
   runApp(SalesPage());
 }
@@ -35,7 +36,7 @@ class SalesPage extends StatelessWidget {
     return MaterialApp(
       title: 'CS428',
       home: Scaffold(
-        body: SignUpScreen(),
+        body: HomeScreen(),
       ),
     );
   }
