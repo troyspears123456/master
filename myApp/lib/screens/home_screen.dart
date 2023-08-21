@@ -194,7 +194,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           ),
                         ),
-                        ElevatedButton(onPressed: (){}, child: Center(child: Text("Become a personal trainer")))
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: ElevatedButton(onPressed: (){}, child: Center(child: Text("Become a personal trainer"))),
+                        )
 
                       ]),
                     ),

@@ -11,12 +11,9 @@ class _MuscleScreenState extends State<MuscleScreen> {
   int itemsPerPage = 3; // Number of items per page
 
   List<String> neckItems = [
-    "Tutor 1",
-    "Tutor 2",
-    "Tutor 3",
-    "Tutor 4",
-    "Tutor 5",
-    "Tutor 6",
+    "Tutor 7",
+    "Tutor 8",
+    "Tutor 9",
     // Add more items as needed...
   ];
 

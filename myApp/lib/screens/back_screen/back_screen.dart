@@ -11,12 +11,12 @@ class _BackScreenState extends State<BackScreen> {
   int itemsPerPage = 3; // Number of items per page
 
   List<String> neckItems = [
-    "Tutor 1",
-    "Tutor 2",
-    "Tutor 3",
-    "Tutor 4",
-    "Tutor 5",
-    "Tutor 6",
+    "Tutor 22",
+    "Tutor 23",
+    "Tutor 24",
+    "Tutor 25",
+    "Tutor 26",
+    "Tutor 27",
     // Add more items as needed...
   ];
 

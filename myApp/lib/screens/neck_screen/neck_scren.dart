@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/trainer_detail/trainer_detail_screen.dart';
 class NeckScreen extends StatefulWidget {
   const NeckScreen({Key? key}) : super(key: key);
 
@@ -34,42 +35,52 @@ class _NeckScreenState extends State<NeckScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             for (String item in currentPageItems)
-              Container(
-                width: 250,
-                height: 250,
-                margin: EdgeInsets.symmetric(horizontal: 8),
-                padding: EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.blue[200],
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Column(
-                  children: [
-                    SizedBox(height: 15),
-                    ClipOval(
-                      child: Image.asset(
-                        "images/pt_gym.png",
-                        width: 100, // Adjust the size as needed
-                        height: 100,
-                        fit: BoxFit.cover,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => TrainerDetailScreen(item: item),
+                    ),
+                  );
+                },
+                child: Container(
+                  width: 250,
+                  height: 250,
+                  margin: EdgeInsets.symmetric(horizontal: 8),
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[200],
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Column(
+                    children: [
+                      SizedBox(height: 15),
+                      ClipOval(
+                        child: Image.asset(
+                          "images/pt_gym.png",
+                          width: 100, // Adjust the size as needed
+                          height: 100,
+                          fit: BoxFit.cover,
+                        ),
                       ),
-                    ),
-                    SizedBox(height: 15),
-                    Text("I love to be your personal trainer in the near future." ,textAlign: TextAlign.center,),
-                    SizedBox(height: 15),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        for (int i = 0; i < 5; i++)
-                          Icon(
-                            Icons.star,
-                            color: Colors.yellow,
-                          ),
-                      ],
-                    ),
-                    SizedBox(height: 15),
-                    Text(item),
-                  ],
+                      SizedBox(height: 15),
+                      Text("I love to be your personal trainer in the near future." ,textAlign: TextAlign.center,),
+                      SizedBox(height: 15),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          for (int i = 0; i < 5; i++)
+                            Icon(
+                              Icons.star,
+                              color: Colors.yellow,
+                            ),
+                        ],
+                      ),
+                      SizedBox(height: 15),
+                      Text(item),
+                    ],
+                  ),
                 ),
               ),
           ],

@@ -11,12 +11,12 @@ class _ThighScreenState extends State<ThighScreen> {
   int itemsPerPage = 3; // Number of items per page
 
   List<String> neckItems = [
-    "Tutor 1",
-    "Tutor 2",
-    "Tutor 3",
-    "Tutor 4",
-    "Tutor 5",
-    "Tutor 6",
+    "Tutor 10",
+    "Tutor 11",
+    "Tutor 12",
+    "Tutor 13",
+    "Tutor 14",
+    "Tutor 15",
     // Add more items as needed...
   ];
 

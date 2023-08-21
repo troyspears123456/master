@@ -11,12 +11,12 @@ class _ChestScreenState extends State<ChestScreen> {
   int itemsPerPage = 3; // Number of items per page
 
   List<String> neckItems = [
-    "Tutor 1",
-    "Tutor 2",
-    "Tutor 3",
-    "Tutor 4",
-    "Tutor 5",
-    "Tutor 6",
+    "Tutor 16",
+    "Tutor 17",
+    "Tutor 18",
+    "Tutor 19",
+    "Tutor 20",
+    "Tutor 21",
     // Add more items as needed...
   ];
 
